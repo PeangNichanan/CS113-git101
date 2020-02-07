@@ -1,0 +1,36 @@
+<<การใช้"GIT" ขั้นพื้นฐาน>>
+    1.การติดตั้งGit
+    2.ตรวจสอบการใช้งานGit
+        -เปิด Command Prompt / Terminal
+        -พิมพ์คำสั่ง git --version
+    3.พิมพ์คำสั่ง git init เมื่อมีgit respository
+    4.ตรวจสอบการเปลี่ยนแปลง
+        -git status
+    5.การเพิ่มไฟล์เข้า Staging area
+        -git add ไฟล์
+    6.การระบุผู้ commit
+        6.1 เครื่องสาธารณะ
+            -git config user.name "Yourname"
+            -git config user.email "Yourmail"
+        6.2 เครื่องส่วนตัว
+            -git config --global user.name "Your name"
+            -git config --global user.email "Yourmail"
+    7.การเก็บcheckpoint
+        -git commit -m "name of your checkpoint"
+    8.แก้ไขไฟล์ a และเพิ่มไฟล์ b
+        -git add a.txt b.txt
+    9.ดูcheckpoint ทั้งหมด
+        -git log --all -- decorate --online --graph
+    10.การเชื่อมlocal respository กับ github
+        -git remote <ชื่อ remote> <git url>
+    11.การ push ไฟล์ ไปเก็บในgithub
+        -git push -u ชื่อremote master
+    12.เอาcheckpointเก่ามาใช้ทั้งหมด
+        -git checkout <commit-id>
+    13.เอาcheckpointเก่ามาใช้บางไฟล์
+        -git checkout <commit-id> ชื่อไฟล์
+    14.การนำไฟล์จากgithubมาไว้ในเครื่อง
+        -git clone <url>
+
+
+
