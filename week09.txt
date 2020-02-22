@@ -1,0 +1,35 @@
+<<<การใช้"GIT" ขั้นพื้นฐาน:Branch Merge Conflict>>>
+
+    <<คำสั่งเกี่ยวกับการสร้างbranch>>
+    1.การสร้าง branch
+        - git branch <ชื่อbranchที่เราต้องการ>
+        - git checkout -b <ชื่อbranchที่เราต้องการ>
+            '--> สร้างและเปลี่ยนbranch
+    2.การตรวจสอบ branch
+        - git branch
+    3.การเปลี่ยน branch 
+        -git checkout <ชื่อbranchที่เราต้องการ>
+
+
+    <<คำสั่งเกี่ยวกับการ merge branch>>
+    1.เลือกbranchที่ต้องการเป็น branch หลักก่อน
+        - git checkout <ชื่อbranchที่เราต้องการให้เป็น branch หลัก>
+    2.merge branch
+        - git merge <ชื่อbranchที่เราต้องการยุบรวบ>
+    3.check line ของการรวม branch
+        - git log --all --decorate --oneline --graph
+    4.push ขึ้นgithub
+        - git push origin master
+
+
+    <<คำสั่งเกี่ยวกับการ pull มาแก้ไข>>
+    1.git pull origin <ชื่อbranchที่เราต้องการ>
+    2.edit file
+    3.git add <file>
+    4.git commit -m ".........."
+    5.check line หลังจากแก้ไข
+        - git log --all --decorate --oneline --graph
+    6.push กลับที่ github
+        - git push origin <ชื่อbranchที่เราต้องการ>
+    7.check line หลังจากการ push back
+        - git log --all --decorate --oneline --graph
